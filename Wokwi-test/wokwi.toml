@@ -1,0 +1,5 @@
+[wokwi]
+version=1
+firmware='build/Wokwi-test.bin'
+elf='build/Wokwi-test.elf'
+gdbServerPort=3333
