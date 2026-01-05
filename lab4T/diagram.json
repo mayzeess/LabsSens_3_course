@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-h2-devkitm-1", "id": "esp", "top": 11.83, "left": 23.7, "attrs": {} },
+    {
+      "type": "wokwi-ky-040",
+      "id": "encoder1",
+      "top": -169.8,
+      "left": -286.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led-ring",
+      "id": "ring1",
+      "top": -394.49,
+      "left": -129.18,
+      "attrs": { "pixels": "37" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:GND.1", "encoder1:GND", "black", [ "h0" ] ],
+    [ "esp:5V", "encoder1:VCC", "red", [ "h0" ] ],
+    [ "esp:2", "encoder1:CLK", "green", [ "v28.8", "h-230.4" ] ],
+    [ "esp:3", "encoder1:DT", "green", [ "h-28.8", "v48", "h-105.5" ] ],
+    [ "esp:4", "encoder1:SW", "green", [ "h0" ] ],
+    [ "esp:GND.1", "ring1:GND", "black", [ "h-38.4", "v-182.4" ] ],
+    [ "esp:6", "ring1:DATA", "green", [ "h0" ] ],
+    [ "ring1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "ring1:DIN", "esp:5", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

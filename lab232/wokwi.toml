@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = 'build/lab232.bin'
+elf = 'build/lab232.elf'
+gdbServerPort = 3333

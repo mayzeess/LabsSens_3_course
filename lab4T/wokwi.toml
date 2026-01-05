@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = 'build/lab4t.bin'
+elf = 'build/lab4t.elf'
+gdbServerPort = 3333
