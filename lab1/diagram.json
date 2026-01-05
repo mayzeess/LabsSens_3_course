@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "lab1",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": -6.4,
+      "left": -118.85,
+      "attrs": {}
+    }
+  ],
+  "connections": []
+}

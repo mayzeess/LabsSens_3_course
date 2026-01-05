@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = 'build/lab1SM.bin'
+elf = 'build/lab1SM.elf'
+gdbServerPort = 3333

@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = "build/lab1.bin"
+elf = "build/lab1.elf"

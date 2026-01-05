@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = 'build/lab2SWW.bin'
+elf = 'build/lab2SWW.elf'
+gdbServerPort = 3333

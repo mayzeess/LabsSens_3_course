@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "author": "Modified for 2-button LED control",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -30, "left": -130, "attrs": { "color": "blue" } },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_on",
+      "top": -128.2,
+      "left": -96,
+      "attrs": { "color": "green", "label": "ON" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_off",
+      "top": -109,
+      "left": 38.4,
+      "attrs": { "color": "red", "label": "OFF" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:GND.1", "led1:C", "black", [] ],
+    [ "esp:26", "led1:A", "green", [] ],
+    [ "btn_on:1.r", "esp:25", "green", [] ],
+    [ "btn_on:2.l", "esp:GND.1", "black", [ "v48.2", "h81.41" ] ],
+    [ "btn_off:1.r", "esp:27", "green", [ "v-28.8", "h-100.79" ] ],
+    [ "btn_off:2.l", "esp:GND.1", "black", [ "v48.2", "h-24.19" ] ]
+  ],
+  "dependencies": {}
+}
